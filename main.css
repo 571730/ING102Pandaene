@@ -1,9 +1,15 @@
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
 
-html, body { overflow-x: hidden; }
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+}
 #navBar {
     background-color: #607d8b;
+}
+#fagContainer{
+    min-height: 100%;
 }
 #sokKnapp{
     border-color: white;
