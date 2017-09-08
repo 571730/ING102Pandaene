@@ -5,6 +5,10 @@ html, body {
     overflow-x: hidden;
     height: 100%;
 }
+.dropdown-menu {
+    background-color: #607d8b;
+}
+
 #navBar {
     background-color: #607d8b;
 }
@@ -18,8 +22,17 @@ html, body {
 #sokKnapp:hover{
     background-color: #68a8ad;
 }
+
 #navBar a{
     color: white;
+}
+.active {
+    border-bottom: solid;
+    border-bottom-color: #4e4f51;
+}
+
+.dropdown-item:hover {
+    background-color: #4e4f51;
 }
 .container-fluid {
     padding-right:0;
@@ -76,6 +89,25 @@ h3{
 #footerJumbo h4{
     text-align: center;
     color: white;
+}
+#fagTittel {
+    margin: 1%;
+    text-align: center;
+    background-color: #ff5722;
+}
+#fagTittel h1{
+    color: white;
+}
+#fagTittel h4{
+    color: #4e535b;
+}
+#lesMer{
+    margin-top: 1%;
+    color: white;
+    background-color: #607d8b;
+}
+#lesMer:hover{
+    background-color: #4e535b;
 }
 
 
