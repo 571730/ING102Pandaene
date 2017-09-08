@@ -10,9 +10,9 @@
     <link rel="stylesheet" type="text/css" href="main.css">
     <script src="main.js"></script>
 </head>
-<body style="background-color: white; color: #4e4f51;">
+<body data-spy="scroll" data-target=".navbar" data-offset="50" style="background-color: white; color: #4e4f51;">
 <div class="container-fluid">
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded" id="navBar">
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded navbar-fixed-top" id="navBar">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -54,15 +54,60 @@
         </div>
     </nav>
     <div class="container">
-        <input type="text" id="sokFag" onkeyup="finnFag()" placeholder="Søk etter fag..">
+        <input type="text" class="form-control" id="sokFag" onkeyup="finnFag()" placeholder="Søk etter fag..">
         <ul class="list-group" id="fagUl">
             <li class="list-group-item"><a href="fag.html">DAT100 Grunnlegende programmering</a></li>
-            <li class="list-group-item"><a href="fag.html">ING102 Grunnlegende programmering</a></li>
-            <li class="list-group-item"><a href="fag.html">MAT101 Grunnlegende programmering</a></li>
-            <li class="list-group-item"><a href="fag.html">MAT102 Grunnlegende programmering</a></li>
+            <li class="list-group-item"><a href="fag.html">ING102 Ingeniørfaglig yrkesutøvelse og arbeidsmetoder for datafag</a></li>
+            <li class="list-group-item"><a href="fag.html">MAT101 Diskret matematikk og programmering</a></li>
+            <li class="list-group-item"><a href="fag.html">MAT102 Diskret matematikk og statistikk</a></li>
+            <li class="list-group-item"><a href="fag.html">MAT104 Grunnleggende matematikk for informasjonsteknologi</a></li>
+            <li class="list-group-item"><a href="fag.html">ING101 Teknologiledelse, økonomi og nyskaping</a></li>
+            <li class="list-group-item"><a href="fag.html">DAT107 Databaser</a></li>
+            <li class="list-group-item"><a href="fag.html">DAT102 Algoritmer og datastrukturer</a></li>
+            <li class="list-group-item"><a href="fag.html">DAT103 Datamaskiner og operativsystemer</a></li>
+            <li class="list-group-item"><a href="fag.html">DAT108 Programmering og webapplikasjoner</a></li>
+            <li class="list-group-item"><a href="fag.html">DAT109 Systemutvikling</a></li>
+            <li class="list-group-item"><a href="fag.html">DAT110 Distribuerte systemer og nettverksteknologi</a></li>
+            <li class="list-group-item"><a href="fag.html">INF114 Datanett</a></li>
+            <li class="list-group-item"><a href="fag.html">DAT190 Bacheloroppgave - Data/Informasjonsteknologi</a></li>
+            <li class="list-group-item"><a href="fag.html">DAT152 Videregående webapplikasjoner</a></li>
+            <li class="list-group-item"><a href="fag.html">DAT153 Mobile og distribuerte applikasjoner</a></li>
+            <li class="list-group-item"><a href="fag.html">DAT154 Programvarearkitektur og applikasjonsutvikling</a></li>
+            <li class="list-group-item"><a href="fag.html">INF122 Funksjonell programmering</a></li>
+            <li class="list-group-item"><a href="fag.html">DAT150 Nettverksadministrasjon, drift og sikkerhet</a></li>
+            <li class="list-group-item"><a href="fag.html">DAT151 Drift av Unix og databaser</a></li>
+            <li class="list-group-item"><a href="fag.html">DAT155 Grafiske metoder</a></li>
+            <li class="list-group-item"><a href="fag.html">DAT156 Praksis i arbeidslivet for data</a></li>
+            <li class="list-group-item"><a href="fag.html">DAT157 Nevrale nett og avanserte algoritmer</a></li>
+            <li class="list-group-item"><a href="fag.html">ING150 Engelsk språk og kultur</a></li>
+            <li class="list-group-item"><a href="fag.html">ING151 Engelsk språk og kultur - nettbasert kurs</a></li>
         </ul>
     </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="jumbotron" id="footerJumbo">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>Test</h4>
+                        <p>Test</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Test</h4>
+                        <p>Test</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Test</h4>
+                        <p>Test</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
 </body>
 </html>
