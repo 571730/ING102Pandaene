@@ -3,7 +3,13 @@
 
 html, body {
     overflow-x: hidden;
-    height: 100%;
+}
+html{
+    min-height: 100%;
+    position: relative;
+}
+body{
+    margin-bottom: 150px;
 }
 .dropdown-menu {
     background-color: #607d8b;
@@ -39,6 +45,13 @@ html, body {
     padding-left:0;
     margin-right:auto;
     margin-left:auto;
+}
+#headerJumbo{
+    margin-top: 3%;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    background-color: #68a8ad;
 }
 
 #titleJumbo {
@@ -112,7 +125,36 @@ h3{
 #sokFag{
     margin-top: 3%;
     margin-bottom: 3%;
-
+}
+#fagUl{
+    padding-bottom: 3%;
+}
+#fagUl a{
+    color: #f17d80;
+}
+#fagUl a:hover{
+    color: #4e535b;
+    text-decoration: none;
+}
+.footer {
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 150px;
+    line-height: 60px; /* Vertically center the text there */
+    background-color: #4e535b;
+}
+#btnReview{
+    border: none;
+    margin-top: 2%;
+    color: white;
+    background-color: #ff5722;
+}
+#btnReview:hover{
+    background-color: #4e535b;
 }
 
 

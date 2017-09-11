@@ -71,33 +71,65 @@
             <div class="col-md-8" id="fagTekst">
                 <h1>DAT100</h1>
                 <h4>Grunnleggende programmering</h4>
+
+                <!-- Her er input til review-->
+                <div class="form-group">
+                    <div class="jumbotron" id="headerJumbo">
+                        <h4>Skriv en anmeldelse av faget</h4>
+                    </div>
+                    <label for="sel1">Hvor vanskelig er dette faget?</label>
+                    <select class="form-control" id="sel1">
+                        <option>1 - Veldig lett</option>
+                        <option>2 - Lett</option>
+                        <option>3 - Middels</option>
+                        <option>4 - Vanskelig</option>
+                        <option>5 - Veldig vanskelig</option>
+                    </select>
+                    <label for="sel2">Hvor interessant er dette faget?</label>
+                    <select class="form-control" id="sel2">
+                        <option>1 - Veldig lite</option>
+                        <option>2 - Litt</option>
+                        <option>3 - Middels</option>
+                        <option>4 - Interessant</option>
+                        <option>5 - Veldig interessant</option>
+                    </select>
+                    <label for="sel3">Hvor mye arbeid inngår i dette faget?</label>
+                    <select class="form-control" id="sel3">
+                        <option>1 - Veldig lite</option>
+                        <option>2 - Lite</option>
+                        <option>3 - Middels</option>
+                        <option>4 - Mye</option>
+                        <option>5 - Veldig mye</option>
+                    </select>
+                    <label for="kommentar">Kortfattet anmeldelse av dette faget</label>
+                    <textarea class="form-control" rows="5" id="kommentar"></textarea>
+                    <button type="submit" class="btn btn-primary btn-block" id="btnReview">Send inn</button>
+
+
+                </div>
             </div>
             <div class="col-md-2"></div>
         </div>
     </div>
+</div>
+</div>
 
+<footer class="footer">
     <div class="row">
-        <div class="col-md-12">
-            <div class="jumbotron" id="footerJumbo">
-                <div class="row">
-                    <div class="col-md-4">
-                        <h4>Test</h4>
-                        <p>Test</p>
-                    </div>
-                    <div class="col-md-4">
-                        <h4>Test</h4>
-                        <p>Test</p>
-                    </div>
-                    <div class="col-md-4">
-                        <h4>Test</h4>
-                        <p>Test</p>
-                    </div>
-                </div>
-            </div>
+        <div class="col-md-4">
+            <h4>Test</h4>
+            <p>Test</p>
+        </div>
+        <div class="col-md-4">
+            <h4>Test</h4>
+            <p>Test</p>
+        </div>
+        <div class="col-md-4">
+            <h4>Test</h4>
+            <p>Test</p>
         </div>
     </div>
-</div>
-</div>
+</footer>
 
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
