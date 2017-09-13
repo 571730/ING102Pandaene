@@ -9,7 +9,24 @@ html{
     position: relative;
 }
 body{
-    margin-bottom: 150px;
+    padding-bottom: 400px;
+}
+#footer{
+    margin-bottom: 0;
+    color: white;
+    background-color: #4e4f51;
+}
+#navbrand1{
+    font-weight: 100;
+    margin-right: 0;
+}
+.navbar-brand{
+    font-weight: 100;
+}
+#navBrand2{
+    font-weight: 400;
+    margin-left: 0;
+    color: #ff5722;
 }
 .dropdown-menu {
     background-color: #607d8b;
@@ -143,7 +160,7 @@ h3{
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
-    height: 150px;
+    height: 20%;
     line-height: 60px; /* Vertically center the text there */
     background-color: #4e535b;
 }
@@ -156,6 +173,7 @@ h3{
 #btnReview:hover{
     background-color: #4e535b;
 }
+
 
 
 /****** Style Star Rating Widget *****/

@@ -14,3 +14,27 @@ function finnFag() {
         }
     }
 }
+
+function fyllAnmeldelse() {
+    var txt = '{"anmeldelser":[' +
+        '{"vanskGrad":"3","intGrad":"5" },' +
+        '{"vanskGrad":"4","intGrad":"1" },' +
+        '{"vanskGrad":"2","intGrad":"3" }]}';
+
+    var anmeldelser = JSON.parse(txt).anmeldelser;
+
+    for ( var i = 0; i < anmeldelser.length; i++ ) {
+        var anm = anmeldelser[i];
+        var $line = $( "<tr></tr>" );
+        $line.append( $( "<td></td>" ).html( anm.vanskGrad ) );
+        $line.append( $( "<td></td>" ).html( anm.intGrad ) );
+        $table.append( $line );
+    }
+
+    $table.appendTo( document.body );
+
+// if you want to insert this table in a div with id attribute
+// set as "myDiv", you can do this:
+   // $table.appendTo( $( "#myDiv" ) );
+
+}

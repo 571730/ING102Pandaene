@@ -8,6 +8,7 @@
     <title>Emner</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="jquery-3.2.1.js"></script>
     <script src="main.js"></script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50" style="background-color: white; color: #4e4f51;">
@@ -16,7 +17,7 @@
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="index.html">HVL Rangering</a>
+        <a class="navbar-brand" href="index.html" id="navBrand1">Stud<span id="navBrand2">port</span></a>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
@@ -25,12 +26,6 @@
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Emner<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link 2</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link 3</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -85,22 +80,36 @@
     </div>
 
 </div>
-<footer class="footer">
+<footer class="footer" id="footer">
             <div class="row">
                 <div class="col-md-4">
-                    <h4>Test</h4>
-                    <p>Test</p>
+                    <h4>Lorem ipsum.</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, temporibus?</p>
                 </div>
                 <div class="col-md-4">
-                    <h4>Test</h4>
-                    <p>Test</p>
+                    <h4>Lorem ipsum.</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, quaerat?</p>
                 </div>
                 <div class="col-md-4">
-                    <h4>Test</h4>
-                    <p>Test</p>
+                    <h4>Lorem ipsum.</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, et.</p>
                 </div>
             </div>
 </footer>
+
+<script>
+
+    $(document).ready(function() {
+
+        var docHeight = $(window).height();
+        var footerHeight = $('#footer').height();
+        var footerTop = $('#footer').position().top + footerHeight;
+
+        if (footerTop < docHeight) {
+            $('#footer').css('margin-top', 10+ (docHeight - footerTop) + 'px');
+        }
+    });
+</script>
 
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
