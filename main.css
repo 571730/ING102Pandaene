@@ -26,14 +26,14 @@ body{
 #navBrand2{
     font-weight: 400;
     margin-left: 0;
-    color: #ff5722;
+    color: #dfb674;
 }
 .dropdown-menu {
-    background-color: #607d8b;
+    background-color: #073650;
 }
 
 #navBar {
-    background-color: #607d8b;
+    background-color: #073650;
 }
 #fagContainer{
     min-height: 100%;
@@ -64,22 +64,40 @@ body{
     margin-left:auto;
 }
 #headerJumbo{
-    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    color: white;
     border-radius: 5px;
-    background-color: #68a8ad;
+    background-color: #073650;
+    width: 50%;
+    opacity: 0.4;
+    position: absolute;
+    margin-top: 10px;
+
+}
+#headerContainer h1{
+    color: #dfb674;
+}
+#headerContainer h5{
+    color: #ffffff;
+}
+
+#headerContainer{
+    background-image: url("bilder/header1_v5.jpg");
+    background-size: 100%;
+    height: 400px;
+    text-align: center;
 }
 
 #titleJumbo {
     text-align: center;
-    background-color: #ff5722;
-    color: #4e4f51;
+    background-color: #073650;
+    color: #ffffff;
     margin: 0;
     border-radius: 0;
 }
 #titleJumbo h1{
-    color: white;
+    color: #dfb674;
 }
 #footerJumbo {
     margin: 0;
