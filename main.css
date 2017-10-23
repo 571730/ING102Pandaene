@@ -114,7 +114,7 @@ body{
     padding: 0;
 }
 #infoJumbo {
-    background-color: #9e9e9e;
+    background-color: #cccccc;
     border-radius: 5px;
     margin: 15px;
 }
@@ -126,7 +126,7 @@ body{
     margin: 20px;
 }
 #tittelTable2{
-    color: #ff5722;
+    color: #68a8ad;
     margin: 50px 0 20px 0;
 }
 h3{
@@ -134,7 +134,7 @@ h3{
 }
 .table a{
     font-weight: bold;
-    color: #f17d80;
+    color: #dfb674;
 }
 .table a:hover{
     color: #4e4f51;
@@ -151,7 +151,7 @@ h3{
 #fagTittel {
     margin: 1%;
     text-align: center;
-    background-color: #ff5722;
+    background-color: #dfb674;
 }
 #fagTittel h1{
     color: white;
@@ -165,7 +165,7 @@ h3{
     background-color: #607d8b;
 }
 #lesMer:hover{
-    background-color: #4e535b;
+    background-color: #9e9e9e;
 }
 #sokFag{
     margin-top: 3%;
@@ -175,7 +175,7 @@ h3{
     padding-bottom: 3%;
 }
 #fagUl a{
-    color: #f17d80;
+    color: #dfb674;
 }
 #fagUl a:hover{
     color: #4e535b;
@@ -212,7 +212,7 @@ h3{
     border: none;
     margin-top: 2%;
     color: white;
-    background-color: #ff5722;
+    background-color: #dfb674;
 }
 #btnReview:hover{
     background-color: #4e535b;
@@ -221,7 +221,7 @@ h3{
     color: white;
     text-align: center;
     margin: 3em 0 2em 0;
-    background-color: #9e9e9e;
+    background-color: #cccccc;
 }
 .tekstFot{
     margin-top: 3em;
