@@ -244,6 +244,23 @@
             $('#footer').css('margin-top', 10+ (docHeight - footerTop) + 'px');
         }
     });
+
+    $(document).ready(function() {
+        var banner_height = $("#headerBilde").height();
+        var lastScrollTop = 0;
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            var currScrollTop = $(this).scrollTop();
+            if (scroll >= banner_height && currScrollTop > lastScrollTop) {
+                $("#navBar").css({'background-color': 'rgba(7,54,80,1)'});
+            } else {
+                $("#navBar").css({'background-color': 'rgba(7,54,80,0.1)'});
+            }
+            lastScrollTop = currScrollTop;
+
+        });
+
+    });
 </script>
 
 

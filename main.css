@@ -41,6 +41,11 @@ body{
     width: 100%;
     top: 0;
     z-index: 9;
+    transition: background-color .5s ease 0s;
+}
+.navBarScroll{
+    background-color: rgba(0,0,0,1);
+    transition: background-color .5s ease 0s;
 }
 
 #fagContainer{
