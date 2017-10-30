@@ -48,6 +48,15 @@
             </ul>
         </div>
     </nav>
+    <!-- SLUTT NAVBAR -->
+    <!-- MAIN CONTENT -->
+    <!-- HEADER BILDE -->
+    <div class="container-fluid" id="pageContainer">
+    <div id="headerContainer" class="container-fluid">
+        <img class="img-responsive" style="width: 100%" src="bilder/IngEmneV2.png" id="headerBilde">
+
+    </div>
+    </div>
     <div class="container">
         <input type="text" class="form-control" id="sokFag" onkeyup="finnFag()" placeholder="Søk etter fag..">
         <ul class="list-group" id="fagUl">
@@ -110,6 +119,25 @@
         if (footerTop < docHeight) {
             $('#footer').css('margin-top', 10+ (docHeight - footerTop) + 'px');
         }
+    });
+</script>
+<script>
+
+    $(document).ready(function() {
+        var banner_height = $("#headerBilde").height();
+        var lastScrollTop = 0;
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            var currScrollTop = $(this).scrollTop();
+            if (scroll >= banner_height && currScrollTop > lastScrollTop) {
+                $("#navBar").css({'background-color': 'rgba(7,54,80,1)'});
+            } else {
+                $("#navBar").css({'background-color': 'rgba(7,54,80,0.1)'});
+            }
+            lastScrollTop = currScrollTop;
+
+        });
+
     });
 </script>
 

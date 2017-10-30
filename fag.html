@@ -51,7 +51,14 @@
     </nav>
 
 <div class="container-fluid" id="pageContainer">
+
+    <!-- HEADER BILDE -->
+        <div id="headerContainer" class="container-fluid">
+            <img class="img-responsive" style="width: 100%" src="bilder/IngDATV3.png" id="headerBilde">
+        </div>
+
     <div class="container-fluid">
+        <!--
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6 jumbotron" id="fagTittel">
@@ -61,6 +68,8 @@
             </div>
             <div class="col-md-3"></div>
         </div>
+        -->
+
         <div class="row">
             <div class="col-md-2"></div>
             <!-- Info om faget -->
@@ -182,6 +191,25 @@
         if (footerTop < docHeight) {
             $('#footer').css('margin-top', 10+ (docHeight - footerTop) + 'px');
         }
+    });
+</script>
+<script>
+
+    $(document).ready(function() {
+        var banner_height = $("#headerBilde").height();
+        var lastScrollTop = 0;
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            var currScrollTop = $(this).scrollTop();
+            if (scroll >= banner_height && currScrollTop > lastScrollTop) {
+                $("#navBar").css({'background-color': 'rgba(7,54,80,1)'});
+            } else {
+                $("#navBar").css({'background-color': 'rgba(7,54,80,0.1)'});
+            }
+            lastScrollTop = currScrollTop;
+
+        });
+
     });
 </script>
 
