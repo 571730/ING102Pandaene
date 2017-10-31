@@ -13,7 +13,7 @@
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50" style="background-color: white; color: #4e4f51;">
 <div class="container-fluid">
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded navbar-fixed-top" id="navBar">
+    <nav class="navbar navbar-inverse navbar-toggleable-md navbar-light bg-faded" id="navBar">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -37,7 +37,7 @@
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                          Mikkel Birkeland
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="drop-menu">
                         <a class="dropdown-item" href="#">Min Profil</a>
                         <a class="dropdown-item" href="#">Anmeldelser</a>
                         <a class="dropdown-item" href="#">Kommentarer </a>
@@ -109,9 +109,7 @@
 -->
 
 <script>
-
     $(document).ready(function() {
-
         var docHeight = $(window).height();
         var footerHeight = $('#footer').height();
         var footerTop = $('#footer').position().top + footerHeight;
@@ -120,8 +118,6 @@
             $('#footer').css('margin-top', 10+ (docHeight - footerTop) + 'px');
         }
     });
-</script>
-<script>
 
     $(document).ready(function() {
         var banner_height = $("#headerBilde").height();
@@ -131,8 +127,10 @@
             var currScrollTop = $(this).scrollTop();
             if (scroll >= banner_height && currScrollTop > lastScrollTop) {
                 $("#navBar").css({'background-color': 'rgba(7,54,80,1)'});
+                $("#drop-menu").css({'background-color': 'rgba(7,54,80,1)'});
             } else {
                 $("#navBar").css({'background-color': 'rgba(7,54,80,0.1)'});
+                $("#drop-menu").css({'background-color': 'rgba(7,54,80,0.1)'});
             }
             lastScrollTop = currScrollTop;
 

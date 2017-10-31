@@ -30,24 +30,20 @@ body{
     color: #dfb674;
 }
 .dropdown-menu {
-    background-color: #000000;
+    background-color: rgba(0,0,0,0.1);
+    transition: background-color .5s ease 0s;
 }
 
 #navBar {
     /*background-color: #073650;*/
     background-color: rgba(0,0,0,0.1);
     position: fixed;
-    overflow: hidden;
+    /*overflow: hidden;*/
     width: 100%;
     top: 0;
-    z-index: 9;
+    z-index: 1;
     transition: background-color .5s ease 0s;
 }
-.navBarScroll{
-    background-color: rgba(0,0,0,1);
-    transition: background-color .5s ease 0s;
-}
-
 #fagContainer{
     min-height: 100%;
 }
@@ -101,6 +97,11 @@ body{
     color: #ffffff;
     margin: 0;
     border-radius: 0;
+}
+#anmJumbo{
+    background-color: #073650;
+    color: #dfb674;
+    text-align: center;
 }
 #titleJumbo h1{
     color: #dfb674;
@@ -218,10 +219,10 @@ h3{
     background-color: #4e535b;
 }
 #reviewsJumbo{
-    color: white;
+    color: #dfb674;
     text-align: center;
     margin: 3em 0 2em 0;
-    background-color: #cccccc;
+    background-color: #073650;
 }
 .tekstFot{
     margin-top: 3em;
